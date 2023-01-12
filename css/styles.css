@@ -1,27 +1,31 @@
 :root {
   font-size: 18px;
+  --gray30: #212121;
+  --gray20: #212429;
+  --gray10: #616161;
 }
 
 body {
-  color: #212121;
+  color: var(--gray30);
+  color: var(--gray30);
 }
 
 a {
-  color: #212121;
+  color: var(--gray30);
 }
 
 header {
-  color: #616161;
+  color: var(--gray10);
   font-size: 14px;
 }
 
 header a {
-  color: #616161;
+  color: var(--gray10);
   text-decoration: none;
 }
 
 header a:hover {
-  color: #212121;
+  color: var(--gray30);
 }
 
 nav details summary {
