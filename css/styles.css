@@ -83,16 +83,24 @@ pre {
   height: 350px;
 }
 
-h3::after {
+.section-content {
+  counter-reset: titleList;
+}
+
+.section-content h3 {
+  counter-increment: titleList;
+}
+
+.section-content h3::before {
+  content: counter(titleList);
+}
+
+.section-content h3::after {
   content: "";
   width: 80px;
   height: 4px;
   background-color: var(--gray30);
-  display: block;
-}
-
-h3::before {
-  content: "-";
+  display: inline-block;
 }
 
 /* ::selection {
