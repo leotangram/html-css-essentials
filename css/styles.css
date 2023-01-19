@@ -82,3 +82,19 @@ pre {
     url("../images/pattern.png");
   height: 350px;
 }
+
+h3::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background-color: var(--gray30);
+  display: block;
+}
+
+h3::before {
+  content: "-";
+}
+
+/* ::selection {
+  background-color: #fec62e;
+} */
