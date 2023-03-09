@@ -87,10 +87,23 @@ h3 {
 
 pre {
   background: #fec62e;
+  font-family: 'Roboto';
+  line-height: 24px;
+  padding: 40px;
 }
 
 blockquote {
+  font-size: 24px;
   margin: 32px 0;
+  padding-left: 16px;
+}
+
+blockquote span {
+  color: var(--gray10);
+}
+
+blockquote span::before {
+  content: '-';
 }
 
 .hero {
@@ -130,10 +143,11 @@ blockquote {
 
 .section-content h3 {
   counter-increment: titleList;
+  padding-bottom: 4px;
 }
 
 .section-content h3::before {
-  content: counter(titleList);
+  content: counter(titleList, decimal) '. ';
 }
 
 .section-content h3::after {
