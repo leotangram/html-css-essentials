@@ -54,6 +54,21 @@ header a:hover {
   color: var(--gray30);
 }
 
+.main {
+  border: 1px solid red;
+  background-color: purple;
+}
+
+.wrapper {
+  margin: auto;
+  width: 902px;
+}
+
+.main-content {
+  background-color: white;
+  padding: 20px;
+}
+
 nav details summary {
   font-weight: bold;
 }
