@@ -97,7 +97,17 @@ hr {
 
 pre {
   background: var(--white10);
+  border: 10px solid red;
   border-radius: 8px;
+  /* border-inline-start: 5px solid var(--white30);
+  border-block-start: 5px solid pink;
+  border-block-end: 20px solid pink;
+  border-inline-end: 5px solid green; */
+  /* border-block-start-color: ; */
+  /* border-start-start-radius: 60px; */
+  border: 10px solid #5551ff;
+  box-shadow: -10px 10px 0 0 #abaaf6;
+  margin-block-end: 30px;
   overflow: auto;
   padding: 40px;
 }
