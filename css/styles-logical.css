@@ -97,6 +97,9 @@ hr {
 
 pre {
   background: var(--white10);
+  border-radius: 8px;
+  overflow: auto;
+  padding: 40px;
 }
 
 p {
@@ -126,18 +129,27 @@ p {
   content: counter(titleList) '. ';
 }
 
-.section-content h3::after {
+/* .section-content h3::after {
   content: '';
   width: 80px;
   height: 4px;
   background-color: var(--white30);
   display: inline-block;
-}
+} */
 
 blockquote {
   background-color: var(--white10);
   border-radius: 8px;
+  font-size: 24px;
+  line-height: 32px;
   margin-block: 80px 63px;
+  /* padding: 24px; */
+  padding-inline: 24px;
+  padding-block: 24px;
+}
+
+blockquote p {
+  color: var(--white30);
 }
 
 /* ::selection {
@@ -151,9 +163,6 @@ blockquote {
 .main {
 }
 
-.main-content {
-}
-
 .wrapper {
   /* width */
   /* inline-size: 902px; */
@@ -162,4 +171,8 @@ blockquote {
   /* height */
   /* block-size: 100px; */
   margin: auto;
+}
+
+.main-content {
+  padding-inline: 16px;
 }
