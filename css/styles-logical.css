@@ -45,13 +45,35 @@ a {
   color: var(--white30);
 }
 
+.header {
+  position: sticky;
+  inset-block-start: -45px;
+}
+
+.header-content {
+  position: relative;
+  inset-block-start: 65px;
+}
+
 header {
   color: var(--white30);
   font-size: 14px;
+  position: absolute;
+  /* top */
+  inset-block-start: 0;
+  /* bottom */
+  /* inset-block-end: ; */
+  /* left */
+  inset-inline-start: -208px;
+  /* right */
+  /* inset-inline-end: ; */
+  /* width */
+  inline-size: 188px;
 }
 
 header li {
   color: var(--white20);
+  margin-block-end: 16px;
 }
 
 header a {
