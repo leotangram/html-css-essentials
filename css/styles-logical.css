@@ -244,3 +244,30 @@ blockquote p {
   background-color: white;
   border-radius: 50%;
 }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form input {
+  inline-size: 100%;
+  background-color: #251f24;
+  border: 1px solid var(--white30);
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: var(--white30);
+  font-size: 16px;
+  padding-inline: 16px;
+  padding-block: 12px;
+}
+
+.form input[type='submit'] {
+  background-color: #157efb;
+  border: none;
+}
+
+.form input::-webkit-input-placeholder {
+  color: var(--white20);
+}
